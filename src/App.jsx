@@ -11,11 +11,12 @@ function App() {
     duration: 10,
   });
 
+  //the + makes sure the string is a number
   function handleChange(inputIdentifier, newValue) {
     setUserInput((prevUserInput) => {
       return {
         ...prevUserInput,
-        [inputIdentifier]: newValue,
+        [inputIdentifier]: +newValue,
       };
     });
   }
